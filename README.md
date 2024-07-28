@@ -16,6 +16,6 @@ Height: Height of the fish (in cm).
 Width: Width of the fish (in cm).
 
 ## Requirement
-gunicorn==22.0.0
-mkl-service==2.4.0
-scipy==1.10.1
+- gunicorn==22.0.0
+- mkl-service==2.4.0
+- scipy==1.10.1
