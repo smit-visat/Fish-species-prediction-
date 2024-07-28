@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fish Species Prediction</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+        .textbox {
+            margin: 10px;
+            padding: 10px;
+            width: 80%;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Fish Species Prediction</h2>
+    <div class="form-container">
+        <form action="/predict" method="post">
+            <input class="textbox" type="text" name="Weight" placeholder="Weight" required><br>
+            <input class="textbox" type="text" name="Length1" placeholder="Length1" required><br>
+            <input class="textbox" type="text" name="Length2" placeholder="Length2" required><br>
+            <input class="textbox" type="text" name="Length3" placeholder="Length3" required><br>
+            <input class="textbox" type="text" name="Height" placeholder="Height" required><br>
+            <input class="textbox" type="text" name="Width" placeholder="Width" required><br>
+            <button class="button" type="submit">Predict</button>
+        </form>
+        <h3>{{ prediction_text }}</h3>
+    </div>
+</body>
+</html>
