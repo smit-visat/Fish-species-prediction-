@@ -19,3 +19,4 @@ Width: Width of the fish (in cm).
 - gunicorn==22.0.0
 - mkl-service==2.4.0
 - scipy==1.10.1
+- Flask==3.0.3
